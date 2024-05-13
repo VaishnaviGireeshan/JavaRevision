@@ -1,13 +1,15 @@
 package springfieldHighSchoolMS;
-
+//Abstract classes cannot be instantiated directly
 abstract class Person {
-	String personName;
-	int personAge;
-	String personGender;
-	public Person(String personName,int personAge,String personGender) {
-		this.personName=personName;
-		this.personAge=personAge;
-		this.personGender=personGender;
+	//instance variables
+	String name;
+	int age;
+	String gender;
+	
+	public Person(String name,int age,String gender) {//initialize the instance variables
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
 	}
 	 public abstract String describeRole();
 }

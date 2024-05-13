@@ -6,21 +6,29 @@ import java.util.List;
 public class Teacher extends Person {
 	private int employeeID;
 	private double salary;
+	private List<String> coursesTaught ;
 	private List<Integer> ratings;
 
-	public Teacher(String personName, int personAge, String personGender, int employeeID, double salary) {
-		super(personName, personAge, personGender);
+	public Teacher(String name, int age, String gender, int employeeID, double salary) {
+		super(name, age, gender);
 		this.employeeID = employeeID;
 		this.salary = salary;
+		this.coursesTaught=new ArrayList<>();
 		this.ratings = new ArrayList<>();
 	}
 
+//	public void addCoursesTaught(String coursesTaught) {
+//		
+//	}
 	public void addRating(int rating) {
 		ratings.add(rating);
 	}
-
+//	public void display(int rating) {
+//		System.out.println(ratings.add(rating));
+//	}
 	public double calculateAverageRating() {
 		if (ratings.isEmpty()) {
+			System.out.println("Please enter a valid rating!!!");
 			return 0;
 		}
 		double sum = 0;

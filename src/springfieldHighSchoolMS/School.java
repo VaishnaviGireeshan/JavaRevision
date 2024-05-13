@@ -29,7 +29,7 @@ public class School {
 	    public String getTeacherInfo() {
 	        StringBuilder info = new StringBuilder();
 	        for (Teacher teacher : teachers) {
-	            info.append("Teacher: ").append(teacher.personName).append(", Average Rating: ").append(teacher.calculateAverageRating()).append("\n");
+	            info.append("Teacher: ").append(teacher.name).append(", Average Rating: ").append(teacher.calculateAverageRating()).append("\n");
 	        }
 	        return info.toString();
 	    }
