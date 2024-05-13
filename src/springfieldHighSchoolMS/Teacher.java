@@ -23,12 +23,12 @@ public class Teacher extends Person {
 	public void addRating(int rating) {
 		ratings.add(rating);
 	}
-//	public void display(int rating) {
-//		System.out.println(ratings.add(rating));
-//	}
+	public void display() {
+		System.out.println();
+	}
 	public double calculateAverageRating() {
 		if (ratings.isEmpty()) {
-			System.out.println("Please enter a valid rating!!!");
+			
 			return 0;
 		}
 		double sum = 0;

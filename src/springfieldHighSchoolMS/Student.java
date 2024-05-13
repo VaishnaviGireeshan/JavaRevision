@@ -1,10 +1,10 @@
 package springfieldHighSchoolMS;
 
 public class Student extends Person {
-	private int studentID;
+	public int studentID;
     public double percentage;
     
-	public Student(String name, int age, String gender,double percentage) {
+	public Student(String name, int age, String gender,int studentID,double percentage) {
 		super(name, age, gender);
 		  this.studentID = studentID;
 	        this.percentage = percentage;
